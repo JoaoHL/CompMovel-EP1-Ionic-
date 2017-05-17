@@ -1,0 +1,20 @@
+<ion-content class-content="login-padding" padding>
+
+  
+	<div class="login-box">
+		<form (ngSubmit)="onLogin(nusp,password)">
+			<ion-list inset>
+				<ion-item>
+					<ion-input type="text" placeholder="Número USP" name="nusp" [(ngModel)]="nusp" required></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-input type="password" placeholder="Senha" name="password" [(ngModel)]="password" required></ion-input>
+				</ion-item>
+			</ion-list> 
+
+			<button ion-button type="submit" block>Login</button>
+		</form>
+   	</div>
+  
+</ion-content>

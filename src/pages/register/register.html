@@ -1,0 +1,24 @@
+<ion-content class-content="login-padding" padding>
+
+  
+	<div class="login-box">
+		<form (ngSubmit)="onRegister(username,nusp,password)">
+			<ion-list inset>
+				<ion-item>
+					<ion-input type="text" placeholder="Nome de usuário" name="username" [(ngModel)]="username" required></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-input type="text" placeholder="Número USP" name="nusp" [(ngModel)]="nusp" required></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-input type="password" placeholder="Senha" name="password" [(ngModel)]="password" required></ion-input>
+				</ion-item>
+			</ion-list> 
+
+			<button ion-button type="submit" block>Register</button>
+		</form>
+   	</div>
+  
+</ion-content>
